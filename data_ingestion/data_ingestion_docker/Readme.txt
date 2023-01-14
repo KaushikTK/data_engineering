@@ -1,0 +1,1 @@
+To perform the whole data ingestion part, run `docker-compose up` in this directory.

@@ -1,0 +1,17 @@
+DATABASE SETUP USING DOCKER
+
+1. Start docker and run `docker pull postgres`
+
+2. Create a folder called `db_data` in the current directory to store all the database data
+
+3. Navigate to images section in docker desktop and run the start button next to the postgres database image.
+
+4. In optional settings, set the following:
+    * container name - DB
+    * host port - 5432
+    * host path - select the db_data folder created in step 2
+    * container path - /var/lib/postgresql/data
+    * env variables -
+        # POSTGRES_USER - root
+        # POSTGRES_PASSWORD - root
+        # POSTGRES_DB - nytaxi_db

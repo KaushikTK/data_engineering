@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  data_ingestion:
+    container_name: data_ingestion_script
+    build: ./py_script
+    restart: on-failure
+    links:
+      - db
+
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=nytaxi_db
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
