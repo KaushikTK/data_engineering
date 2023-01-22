@@ -1,0 +1,5 @@
+1. Run `mkdir ./logs ./plugins` to create 3 folders to match the folder structure of apache airflow
+2. Run `docker-compose up airflow-init` to initialise apache airflow -- run this command only once when u are setting up airflow. No need to run this everytime.
+3. Run `docker-compose up` and head to localhost:8080
+    username - airflow
+    password - airflow

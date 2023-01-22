@@ -1,0 +1,23 @@
+file: dag_using_bash.py
+explanation:
+This uses the bash operator to run commands in a bash shell. So, all the commands that you wish to run in cmd can be declared as multiple separare tasks.
+
+file: dag_using_python.py
+explanation:
+This uses the python operator to run multiple tasks where each task is basically a function which gets called. Please refer the code to understand further. Please see how the data is shared between multiple tasks.
+
+file: dag_with_taskflow_api.py
+explanation: 
+this uses the taskflow api which reduces the number of lines of code for using the python operator. Please see how the data is shared between multiple tasks.
+
+file: dag_with_catchup_&_backfill.py
+explanation:
+Please refer to the code for better understanding.
+
+file: dag_with_cron_expression.py
+explanation:
+This file shows how regular expression can be used to schedule tasks. Please refer the code for further information.
+
+file: dag_with_postgres_connection.py
+explanation:
+This file explains about connecting to the postgres db through airflow. Please refer to the code for further information.
